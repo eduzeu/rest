@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Finderss</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#news">Prices</a>
+        <a href="#contacts">Reviews</a>
+        <a href="#about">About</a>
+    </div>
+
+    <header>
+        <h1>Restaurant Finder</h1>
+        <form action="/search" method="post">
+            <input type="text" id="locationInput" name="location" placeholder="Enter your location">
+            <button type="submit" id="searchButton">Search</button>
+        </form>
+    </header>
+
+    <main>
+        <section id="results">
+       
+        </section>
+    </main>
+</body>
+</html>
